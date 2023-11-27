@@ -50,6 +50,8 @@ O principal objetivo do ``EquiTalk`` é criar uma solução tecnológica e inova
 <a id="ancora2"></a>
 
 # 2 - Desenvolvimento do Projeto 
+Esse projeto foi realizado na etapa final do programa de bolsas de Machine Learning com AWS da Compass.uol.
+
 O projeto foi desenvolvido utilizando o serviço de ChatBot <a href=https://aws.amazon.com/pm/lex> ``Lex``</a>, disponibilizado pela AWS, integrado com a plataforma <a href= https://www.twilio.com/docs/whatsapp> ```Twilio```</a>, para utilização através do <a href=https://www.whatsapp.com>``WhatsApp``</a>. <br>
 <br>
 Além do <a href= https://aws.amazon.com/pm/lex> ``Lex``</a>, também foram utilizados os serviços <a href= https://aws.amazon.com/pm/polly> ``Polly``</a>, <a href= https://aws.amazon.com/pm/transcribe> ``Transcribe``</a> e <a href= https://aws.amazon.com/rekognition> ``Rekognition``</a>, todos disponibilizados pela AWS.<br>
