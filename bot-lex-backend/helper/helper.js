@@ -1,3 +1,7 @@
+const isAudio = (dataString) => {
+    return /^media=[a-z]{5}&extension=(mp3)&bucketKey=[a-z\d]+\.(mp3){1}$/.test(dataString)
+}
+
 const isFormData = (dataString) => {
     return /^media=[a-zA-Z\d]{0,}&extension=[a-zA-Z\d]{0,}&bucketKey=[a-zA-Z\d]+\.[a-zA-Z\d]{0,}$/.test(dataString)
 }
