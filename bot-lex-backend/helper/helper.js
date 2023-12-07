@@ -6,6 +6,10 @@ const isFormData = (dataString) => {
     return /^media=[a-zA-Z\d]{0,}&extension=[a-zA-Z\d]{0,}&bucketKey=[a-zA-Z\d]+\.[a-zA-Z\d]{0,}$/.test(dataString)
 }
 
+const isImage = (dataString) => {
+    return /^media=[a-z]{5}&extension=(jpeg)&bucketKey=[a-z\d]+\.(jpeg){1}$/.test(dataString)
+}
+
 function prepareResponse(event, msgText) {
     
     const response = {
@@ -28,4 +32,4 @@ function prepareResponse(event, msgText) {
     }
     return response
 }
-module.exports = { isFormData, prepareResponse, isAudio }
+module.exports = { isFormData, prepareResponse, isAudio, isImage }
