@@ -28,4 +28,4 @@ function prepareResponse(event, msgText) {
     }
     return response
 }
-module.exports = { isFormData, prepareResponse }
+module.exports = { isFormData, prepareResponse, isAudio }
