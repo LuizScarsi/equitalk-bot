@@ -1,0 +1,29 @@
+service: rekognition-microservice
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    BUCKET_NAME: ${env:BUCKET_NAME}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - rekognition:DetectText
+      Resource: "*"
+
+functions:
+  toText:
+    handler: handler.handler
+    events:
+      - httpApi:
+          path: /toText
+          method: post
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    host: "127.0.0.1"
