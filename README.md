@@ -74,6 +74,8 @@ O deploy da aplicação foi relizado através da arquitetura <a href= https://ww
     <img src = "./assets/images/apresentacao.png">
   </div>  
 
+- A aplicação está indisponível, portanto, o QR code não está funcionando
+
 <a id="ancora4"></a>
 
 # 4 - Funcionalidades
